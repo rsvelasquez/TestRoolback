@@ -1,0 +1,19 @@
+application:
+  catalog-error:
+    url: http://aks-genesis-ingress-prod.eastus2.cloudapp.azure.com
+    subscription-key: 4b7d6d29e4be4b82b6418f44ceef60a2
+  onpremise:
+    clientId: 2ef4aa6a-4d39-4ac9-b8b3-8fc3cd6c56e7
+    endpoint:
+      ticketManagement: https://apisd.telefonica.com.pe/vp-tecnologia/bssd/ri/ticketManagementReclamos/v1
+    paths:
+      retrieveTickets: /tickets
+    timeout:
+      connection: 
+        ticketManagement: 5000
+      read:
+        ticketManagement: 5000
+      write:
+        ticketManagement: 5000
+    token:
+      endpoint: https://aks-integracion-ingress-dev.eastus2.cloudapp.azure.com/token/v1/application/
