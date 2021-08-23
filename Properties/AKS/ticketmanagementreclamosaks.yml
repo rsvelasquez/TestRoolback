@@ -5,7 +5,7 @@ application:
   onpremise:
     clientId: 2ef4aa6a-4d39-4ac9-b8b3-8fc3cd6c56e7
     endpoint:
-      ticketManagement: https://apis.telefonica.com.pe/vp-tecnologia/bss/ri/ticketManagementReclamos/v1
+      ticketManagement: https://apisd.telefonica.com.pe/vp-tecnologia/bss/ri/ticketManagementReclamos/v1
     paths:
       retrieveTickets: /tickets
       modifyTicketEvent: /modifyTicketEvent
@@ -18,4 +18,4 @@ application:
       write:
         ticketManagement: 5000
     token:
-      endpoint: https://aks-integracion-ingress-prod.eastus2.cloudapp.azure.com/token/v1/application/
+      endpoint: https://aks-integracion-ingress-cert.eastus2.cloudapp.azure.com/token/v1/application/
